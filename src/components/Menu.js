@@ -14,7 +14,7 @@ function Menu(props) {
                       </span><a onClick={() => setContent('dashboard')}>Dashboard</a></li>
                   <li><span class="material-symbols-rounded">
                       edit
-                      </span><a>Create new project</a></li>
+                      </span><a onClick={() => setContent('newProject')}>Create new project</a></li>
                   <li><span class="material-symbols-rounded">
                       calendar_today
                       </span>Calendar</li>
