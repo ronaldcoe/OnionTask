@@ -1,5 +1,5 @@
 import './Menu.css';
-import {useContext} from 'react'
+import { useContext } from 'react'
 import { ContentContext } from './ContentContext';
 import MyProjects from './MyProjects';
 
