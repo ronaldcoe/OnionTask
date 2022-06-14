@@ -28,7 +28,7 @@ function Displayproject() {
                     <h3>
                         <span class="material-symbols-rounded">
                             campaign
-                        </span>Announcements
+                        </span>Description
                     </h3>
                     <p>In auctor tortor nibh, id semper elit elementum at. Nulla dapibus nibh in purus ultricies, a accumsan quam cursus. Nunc mi enim, sagittis eu porta at, cursus sed augue. Nulla facilisi.</p>
                         
