@@ -1,8 +1,9 @@
 import './Menu.css';
 import {useContext} from 'react'
 import { ContentContext } from './ContentContext';
+import MyProjects from './MyProjects';
 
-function Menu() {
+function Menu(props) {
     const {content, setContent} = useContext(ContentContext)
     return(
       <div id="overview">
@@ -30,19 +31,7 @@ function Menu() {
                 
                   <ul>
                   <h3>Projects</h3>
-                      <li><span class="material-symbols-rounded">
-                          folder
-                          </span>Web App</li>
-        
-                          <li onClick={() => setContent('project')}>&nbsp;&nbsp;&nbsp;&nbsp;<span class="material-symbols-rounded">
-                              description
-                              </span>Front-end</li>
-                              <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="material-symbols-rounded">
-                                  description
-                                  </span>Back-end</li>
-                                  <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="material-symbols-rounded">
-                                      description
-                                      </span>Marketing</li>
+                      <MyProjects projects = {props.projects} tasks = {props.tasks}/>
                   </ul>
                   
               </div>
