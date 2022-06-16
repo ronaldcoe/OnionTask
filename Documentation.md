@@ -2,7 +2,7 @@
 
 Every component is defined in two parts. The css file defines where the component is placed. The js file defines what it is. The majority of work is in the js file. 
 
-#### Making a component
+#### Making a component in React
 
 ```javascript
 import Menu from './Menu'
