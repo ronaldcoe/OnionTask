@@ -4,6 +4,7 @@ import { ContentContext } from './ContentContext';
 import CreateProject from './CreateProject';
 import Dashboard from './Dashboard';
 import Displayproject from './Displayproject';
+import MySpace from './MySpace';
 
 function Content(props) {
     const {content, setContent} = useContext(ContentContext)
@@ -15,6 +16,8 @@ function Content(props) {
         display = <Displayproject />;
     } else if (content === 'newProject') {
         display = <CreateProject />
+    } else if (content === 'mySpace') {
+        display = <MySpace />
     }
    
     return (

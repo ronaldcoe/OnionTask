@@ -14,7 +14,7 @@ let user = "Ronald"
 
 function App() {
   const [content, setContent] = useState('dashboard')
-
+  
   // Get the Projects Collection
   const [projects, setProjects] = useState([]);
   const projectsCollectionRef = collection(db, 'Projects')
@@ -44,11 +44,9 @@ function App() {
   return (
     <>
     <ContentContext.Provider value={{content, setContent}}>
-      <Navbar name = {user}/>
- 
+      <Navbar name = {user}/> 
       <Menu projects = {projects} tasks = {tasks}/>
-      <Content projects = {projects}/>
-     
+      <Content projects = {projects}/>     
     </ContentContext.Provider>
     </>
   );
