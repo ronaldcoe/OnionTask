@@ -11,7 +11,7 @@ Front-end JavaScript library for building user interfaces
 ### Virtual DOM
 It's a JavaScript representation of the DOM. It's faster tha updating the real DOM because React only updates the section of the page that needs to be updated not the entire page.
 
-Component is a small piece of the user interface. There are 2 types of components: Functional components and Class-based components. This last one is not used anymore
+Component is a small piece of the user interface. There are 2 types of components: Functional components and Class-based components. This last one is being replaced by functional components.
 
 ```JavaScript
 const example = () => {
